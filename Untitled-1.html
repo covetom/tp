@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <style>
+    body {
+        height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+     font-family: 'Bruno Ace SC', sans-serif;
+     color: rgb(139, 14, 14);
+     background-color: rgb(170, 177, 238);
+      .esquina {
+      position: absolute;
+      top: 0;
+      right: 0;
+}
+ .titulo {
+ position: absolute;
+      top: 0;
+      }
+      .input {
+        width: 750px;   
+  height: 25px;
+      }
+    .boton {
+        width: 50%;
+        font-size: 25px;
+  }
+  .esquinaizq {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      }
+}
+</style>
+    <title>TP Pagina principal</title>
+    </head>
+<body>
+    <h6 class="esquinaizq">Bebidas Twiti</h6> <img src="https://img.pikbest.com/png-images/20240608/bottle-of-wine-icon-simple-style-png-vector-fresh-drink-drop-logo-template_10499922.png!sw800" width="125" height="75" class="esquina">
+    <p class="titulo">Inicia sesion</p>
+    <form>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" required value="carlos" class="input"> <br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" value="1234" required class="input"><br><br>
+        <button type="submit" class="boton"  onclick="Mensaje()">Enviar</button>
+        </form>
+    <script>
+         function Mensaje() {
+            var Nombre = document.getElementById("Nombre").value;
+     if (Nombre === "carlos" ) {
+                    alert (href="file:///D:/DOCUTOMY/Paginas%20web/prueba.html"); 
+                    } else {
+                        alert ("Usuario o contraseña incorrectos")
+                 }
+                 }
+            </script>
+    </body>
+
+</html>
+                
+                   

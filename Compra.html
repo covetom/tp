@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+         <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+       font-family: 'Bruno Ace SC', sans-serif;
+     color: rgb(139, 14, 14);
+     background-color: rgb(170, 177, 238);
+}
+    
+    .esquina {
+      position: absolute;
+      top: 0;
+      right: 0;
+}
+    .titulo {
+ position: absolute;
+      top: 0;
+      }
+      .input {
+        width: 750px;   
+  height: 25px;
+      }
+    .boton {
+        width: 50%;
+        font-size: 25px;
+  }
+  .esquinaizq {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      }
+</style>
+<h6 class="esquinaizq">Bebidas Twiti</h6>
+<title>TP Pagina compra</title> <img src="https://img.pikbest.com/png-images/20240608/bottle-of-wine-icon-simple-style-png-vector-fresh-drink-drop-logo-template_10499922.png!sw800" width="125" height="75" class="esquina">
+        <p class="titulo">Informacion del envio:</p>
+</head>
+        <body>
+        <form>
+            <label id="NombreApellido">Nombre y apellido</label> <br>
+            <input type="text" required class="input"> <br>
+            <label>Direccion</label> <br>
+            <input type="email" required class="input"> <br>
+            <label>Calle</label> <br>
+            <input type="text" required class="input"> <br>
+            <label>Numero</label> <br>
+            <input type="text" required class="input"> <br>
+            <label>CP</label> <br>
+            <input type="text" required class="input" > <br>
+            <label for="Productos">Producto</label> <br>
+            <input type="search" list="ListaP" id="Productos" name="Productos" required class="input" > <br>
+            <datalist id="ListaP">
+                <option value="Manaos"></option>
+                <option value="Coca cola"></option>
+                <option value="Fanta"></option>
+                 <option value="Fernet"></option>
+                  <option value="Quilmes"></option>
+                   <option value="Seven up"></option>
+            </datalist>
+            <label>cantidad</label> <br>
+            <input type="number" id="Cantidad" name="Cantidad" required class="input"> <br>
+            <button type="submit" onclick="Mensaje()" class="boton" >Enviar</button> 
+        </form>
+        <script>
+           function Mensaje() {
+             var Productos = document.getElementById("Productos").value;
+             var Cantidad = document.getElementById("Cantidad").value;
+                var Envio = true
+                if (Envio) {
+                    alert ("Usted a comprado "+ Cantidad + " unidades de " +  Productos );
+                } else {
+                    alert ("mal")
+                }
+            }
+        </script>
+    </body>
+</html>
